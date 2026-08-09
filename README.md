@@ -4,34 +4,47 @@ An ESP32-based firefighter safety monitoring prototype developed and tested usin
 FireShield monitors multiple hazardous conditions and provides immediate alerts when a dangerous situation is detected.
 
 🚨 Features:
-🌡️ Temperature monitoring using DS18B20
-💨 Gas/smoke detection using MQ-2
-👁️ Visibility monitoring
-🧍 Fall detection using MPU6050
-🆘 Manual SOS button
-🔊 Emergency buzzer
-🔴 Warning LED
-📺 OLED live status display
-💾 SD-card event logging
-🔋 Battery-level monitoring
+🌡️ 1. Temperature monitoring using DS18B20
+💨 2. Gas/smoke detection using MQ-2
+👁️ 3. Visibility monitoring
+🧍 4. Fall detection using MPU6050
+🆘 5. Manual SOS button
+🔊 6. Emergency buzzer
+🔴 7. Warning LED
+📺 8. OLED live status display
+💾 9. SD-card event logging
+🔋 10. Battery-level monitoring
 
 🛠️ Components:
-ESP32 DevKit
-DS18B20
-MQ-2 Gas Sensor
-MPU6050
-SSD1306 OLED
-MicroSD Card
-Push Button
-Buzzer
-LED
-Potentiometers for visibility and battery simulation
+1. ESP32 DevKit
+2. DS18B20
+3. MQ-2 Gas Sensor
+4. MPU6050
+5. SSD1306 OLED
+6. MicroSD Card
+7. Push Button
+8. Buzzer
+9. LED
+10. Potentiometers for visibility and battery simulation
 
 💻 Technologies:
 Embedded C/C++, ESP32 Arduino, I²C, SPI, Wokwi.
 
 🔌 Main Pin Configuration:
-| Function | ESP32 | SOS Button - GPIO 13 Buzzer - GPIO 27 LED - GPIO 2 DS18B20 - GPIO 4 SD CS - GPIO 5 MQ-2 - GPIO 32 Visibility - GPIO 34 Battery - GPIO 35 I²C SDA - GPIO 21 I²C SCL - GPIO 22 SD SCK - GPIO 18 SD MISO - GPIO 19 SD MOSI - GPIO 23
+| Function | ESP32 | 
+1. SOS Button - GPIO 13
+2. Buzzer - GPIO 27
+3. LED - GPIO 2
+4. DS18B20 - GPIO 4
+5. SD CS - GPIO 5
+6. MQ-2 - GPIO 32
+7. Visibility - GPIO 34
+8. Battery - GPIO 35
+9. I²C SDA - GPIO 21
+10. I²C SCL - GPIO 22
+11. SD SCK - GPIO 18
+12. SD MISO - GPIO 19
+13. SD MOSI - GPIO 23
 
 🧠 How It Works:
 Sensors → ESP32 → Analyze conditions → Emergency detected → Buzzer + LED + OLED + SD logging
