@@ -52,10 +52,11 @@ Sensors → ESP32 → Analyze conditions → Emergency detected → Buzzer + LED
 💾 Example SD Log:
 
 EVENT NUMBER:
-1 EVENT:HIGH TEMP TEMPERATURE: 72.4 C 
-2 GAS VALUE: 3628 
-3 VISIBILITY: 820
-4 BATTERY: 76%
+
+1. EVENT:HIGH TEMP TEMPERATURE: 72.4 C
+2. GAS VALUE: 3628
+3. VISIBILITY: 820
+4. BATTERY: 76%
 
 📡 Communication Protocols:
 1. I²C Used for: MPU6050 SSD1306 OLED
