@@ -3,7 +3,7 @@ An ESP32-based firefighter safety monitoring prototype developed and tested usin
 
 FireShield monitors multiple hazardous conditions and provides immediate alerts when a dangerous situation is detected.
 
-🚨 Features
+🚨 Features:
 🌡️ Temperature monitoring using DS18B20
 💨 Gas/smoke detection using MQ-2
 👁️ Visibility monitoring
@@ -14,7 +14,8 @@ FireShield monitors multiple hazardous conditions and provides immediate alerts 
 📺 OLED live status display
 💾 SD-card event logging
 🔋 Battery-level monitoring
-🛠️ Components
+
+🛠️ Components:
 ESP32 DevKit
 DS18B20
 MQ-2 Gas Sensor
@@ -25,39 +26,54 @@ Push Button
 Buzzer
 LED
 Potentiometers for visibility and battery simulation
-💻 Technologies
+
+💻 Technologies:
 Embedded C/C++, ESP32 Arduino, I²C, SPI, Wokwi.
 
-🔌 Main Pin Configuration
+🔌 Main Pin Configuration:
 | Function | ESP32 | SOS Button - GPIO 13 Buzzer - GPIO 27 LED - GPIO 2 DS18B20 - GPIO 4 SD CS - GPIO 5 MQ-2 - GPIO 32 Visibility - GPIO 34 Battery - GPIO 35 I²C SDA - GPIO 21 I²C SCL - GPIO 22 SD SCK - GPIO 18 SD MISO - GPIO 19 SD MOSI - GPIO 23
 
-🧠 How It Works
+🧠 How It Works:
 Sensors → ESP32 → Analyze conditions → Emergency detected → Buzzer + LED + OLED + SD logging
 
-💾 Example SD Log
-EVENT NUMBER: 1 EVENT: HIGH TEMP TEMPERATURE: 72.4 C GAS VALUE: 3628 VISIBILITY: 820 BATTERY: 76%
+💾 Example SD Log:
 
-📡 Communication Protocols
-I²C Used for: MPU6050 SSD1306 OLED
+EVENT NUMBER:
+1 EVENT:HIGH TEMP TEMPERATURE: 72.4 C 
+2 GAS VALUE: 3628 
+3 VISIBILITY: 820
+4 BATTERY: 76%
 
-OneWire Used for: DS18B20
+📡 Communication Protocols:
+1. I²C Used for: MPU6050 SSD1306 OLED
 
-SPI Used for: MicroSD card
+2. OneWire Used for: DS18B20
 
-Analog Input Used for: MQ-2 Visibility simulation Battery simulation
+3. SPI Used for: MicroSD card
 
-🚦 Safety Thresholds
-Parameter Threshold Temperature ≥ 60°C Gas > 3800 Visibility < 1500 Fall acceleration > 15 m/s² Low Battery ≤ 20%
+4. Analog Input Used for: MQ-2 Visibility simulation Battery simulation
+
+🚦 Safety Thresholds:
+Parameter:
+1. Threshold Temperature ≥ 60°C
+2. Gas > 3800
+3. Visibility < 1500
+4. Fall acceleration > 15 m/s²
+5. Low Battery ≤ 20%
 
 Note: These values are prototype thresholds for simulation and demonstration. They are not certified safety limits for real firefighter operations.
 
-🧪 Simulation
+🧪 Simulation:
+
 Built and tested using Wokwi.
 
 Wokwi: https://wokwi.com/projects/471623661827837953
 
-🔮 Future Work
+🔮 Future Work:
+
 GPS location tracking GSM emergency SMS Real hardware implementation Wearable enclosure Remote monitoring
 
-👨‍💻 Author
-Nikhil Chavan Electronics & Telecommunication Engineering
+👨‍💻 Author:
+
+Nikhil Chavan:
+Electronics & Telecommunication Engineering
